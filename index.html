@@ -5,27 +5,32 @@
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
     <meta charset="utf-8">
     <title>Here it is!</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
 
   <body>
     <div class="container" id="app">
-      <h3 class="text-center">VueAxios Demo</h3>
+
+      <h3 class="text-center">Test</h3>
+
       <div class="columns medium-3" v-for="result in results">
-	  <div class="card">
-	    <div class="card-divider">
-	      {{ result.title }}
-	    </div>
-	    <div class="card-section">
-	      <p>{{ result.abstract }}.</p>
-	    </div>
-	  </div>
-	</div> 
+        <div class="card">
+          <div class="card-divider">
+            {{ result.title }}
+          </div>
+          <div class="card-section">
+            <p>{{ result.abstract }}.</p>
+          </div>
+        </div>
+      </div>
+      
     </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </body>
 
 </html>
 
-<!-- Load Vue, app.js and Axios scripts-->
-<script src="https://unpkg.com/vue"></script>
-<script src="app.js"></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
